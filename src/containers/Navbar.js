@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { } from "react-router-dom";
-import "../style/navbar.css"; 
+import "../style/navbar.css" 
 
 
 class Navbar extends Component {
@@ -12,15 +12,17 @@ class Navbar extends Component {
 		return(
 			 <div>
           <nav class="navbar navbar-expand-lg navbar-light xo">
-     <a class="nav" href="/" >Toll Pay</a>
-
-</nav>
       <div class="container">
+   
+  <a class="xcv" href="/" >Toll Pay</a>
    <form >
-      <input class="form-control " type="search" placeholder="start point" aria-label="Search" />
-      <input type = "search" placeholder="destination"/>
-      </form>   
-</div> 
+      <input class="form-control" type="search" placeholder="  Start Point" aria-label="Search" /> 
+      <input class = "form-control" type = "search" placeholder="  Destination"/>
+      </form>
+
+</div>
+</nav>
+ 
 
 </div>
 

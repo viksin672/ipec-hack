@@ -1,13 +1,24 @@
 .navbar{
-    background-color:steelblue;
-    height:50px;
+    background-color:#092d7a;
+    height:150px;
 }
-
-.navbar a{
-    font-size:25px;
+.container{
     text-align: center;
-    margin:auto;
+    font-weight:bold;
+    height:40px;
 }
-.container .formcontr{
-    
+.xcv{
+    color:#b7cbf7;
+    font-size: 50px;
+    font-family: TimesNewRoman;
+    margin-top:20px;
+}
+.form-control{
+    height:40px;
+    margin:40px;
+    border:2px solid grey;
+    border-radius: 5px;
+    font-size: 18px;
+    color:black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAcudocMR6cuPj-JEQaLqvABtdy8oasHLXzj6C1oNRLoXW3rMs");
 }
