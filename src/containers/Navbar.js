@@ -4,6 +4,7 @@ import {getGeoLocation} from '../store/actions/getGeoLocation';
 import debounce from 'lodash.debounce';
 import axios from 'axios';
 import { connect } from "react-redux";
+import "../style/navbar.css"
 
 
 
@@ -83,11 +84,11 @@ class Navbar extends Component {
       onChange={this.handleOnChange.bind(this)}
       
       />
-      <input type = "search" placeholder="destination"
+      <input class="form-control " type = "search" placeholder="destination"
       value={this.state.term2}
       onChange={this.handleOnChange2.bind(this)}
       />
-      <button type="Submit"> Submit </button>
+      <button class="btn btn-primary" type="Submit"> Submit </button>
       </form>
   
 
