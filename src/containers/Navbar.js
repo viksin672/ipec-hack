@@ -1,29 +1,26 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
-
+import { } from "react-router-dom";
+import "../style/navbar.css"; 
 
 
 class Navbar extends Component {
   
   
-  
+
 	render(){
     
 		return(
 			 <div>
           <nav class="navbar navbar-expand-lg navbar-light xo">
+     <a class="nav" href="/" >Toll Pay</a>
+
+</nav>
       <div class="container">
-   
-  <a class="xcv" href="/" >Toll Pay</a>
    <form >
       <input class="form-control " type="search" placeholder="start point" aria-label="Search" />
       <input type = "search" placeholder="destination"/>
-      </form>
-  
-
-</div>
-</nav>
- 
+      </form>   
+</div> 
 
 </div>
 
