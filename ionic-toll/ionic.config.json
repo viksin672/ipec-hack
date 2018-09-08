@@ -1,0 +1,7 @@
+{
+  "name": "toll",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
