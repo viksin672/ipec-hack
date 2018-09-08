@@ -13,21 +13,20 @@ class Navbar extends Component {
     constructor() {
         super();
         this.state = 
-        { term: '' ,
+        { term1: '' ,
          waypoint0: '',
          term2:'',
          waypoint1:''
         };
-        // bind
-    this.handleOnChange = this.handleOnChange.bind(this);
+        
     this.onHandleSubmit = this.onHandleSubmit.bind(this);
         this.debounceSearch = debounce(this.search, 300);
       }
   
-      search(term) {
-        axios.get(`https://geocoder.api.here.com/6.2/geocode.json?searchtext=${term}&app_id=MpC8xRqN60004gk925Zj&app_code=zsp6J7jTDfG-1inCXCUcTg`)
+      search(term1) {
+        axios.get(`https://geocoder.api.here.com/6.2/geocode.json?searchtext=${term1}&app_id=MpC8xRqN60004gk925Zj&app_code=zsp6J7jTDfG-1inCXCUcTg`)
           .then(({ data }) => {
-            if (this.state.term.length) {
+            if (this.state.term1.length) {
               this.setState({ waypoint0 : data});
             
             }
@@ -46,11 +45,11 @@ class Navbar extends Component {
       }
     
       handleOnChange(e) {
-        let term = e.target.value;
-        if (!term) return this.setState({ term: '' });
-        this.setState({ term });
-        term = term.replace(/\s+/g, '+');
-        return this.debounceSearch(term);
+        let term1 = e.target.value;
+        if (!term1) return this.setState({ term1: '' });
+        this.setState({ term1 });
+        term1 = term1.replace(/\s+/g, '+');
+        return this.debounceSearch(term1);
       }
       handleOnChange2(e) {
         let term2 = e.target.value;
@@ -80,7 +79,7 @@ class Navbar extends Component {
   <a class="xcv" href="/" >Toll Pay</a>
    <form onSubmit={this.onHandleSubmit} >
       <input class="form-control " type="search" placeholder="start point" aria-label="Search"
-      value={this.state.term}
+      value={this.state.term1}
       onChange={this.handleOnChange.bind(this)}
       
       />
